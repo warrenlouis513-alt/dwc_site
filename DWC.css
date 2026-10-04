@@ -1,0 +1,88 @@
+/* style.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background: #4B0082;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+.navbar a:hover { color: #FFD700; }
+
+/* Home Section */
+#homeSection {
+    padding: 100px 20px;
+    text-align: center;
+    background: #FFD700;
+}
+#homeSection.active { display: block; }
+#homeSection { display: none; }
+
+/* Sections */
+section.about {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background: #FFD700;
+    border-radius: 6px;
+    text-align: center;
+}
+section.about.active { display: block; }
+section.about { display: none; }
+
+/* Headings */
+h1, h2 { font-family: 'Merriweather', serif; margin-bottom: 20px; }
+
+/* Paragraphs */
+p { margin-bottom: 15px; font-size: 1.2rem; }
+
+/* Buttons */
+button, .main_btn {
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    background-color: #4B0082;
+    color: #FFD700;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+button:hover, .main_btn:hover { transform: scale(1.05); }
+
+/* Inputs */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border-radius: 6px;
+    border: 1px solid #4B0082;
+}
+
+/* Display containers */
+#bibleDisplay, #eventsList, #contactMessages {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    background: #fff8dc;
+    border: 1px solid #4B0082;
+    border-radius: 6px;
+    white-space: pre-wrap;
+}
+
+/* Responsive */
+@media screen and (max-width: 960px) {
+    .navbar { flex-direction: column; }
+    .navbar a { margin: 5px 0; }
+}
